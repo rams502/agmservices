@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html>
-<title>Welcome to AG Services</title>
+<title>Welcome to AGM Services</title>
 <link rel = "icon" href = "./favicon.png"  type = "image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
+ 
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #222;
+  color: white;
+}
+
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
@@ -23,7 +64,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src="./logo.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <a href="#main" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
@@ -31,10 +72,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+ <!--  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>PHOTOS</p>
-  </a>
+  </a> -->
   <a href="#services" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>SERVICES</p>
@@ -47,11 +88,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  <div class="mobile-container">
+ <div class="topnav">
+  <a href="#main" class="active"> <img src="./logo.png" style="width:8%"></a>
+  <div id="myLinks">
+    <a href="#about">ABOUT</a>
+    <a href="#services">Services</a>
+    <!-- <a href="#photos">PHOTOS</a> -->
+    <a href="#contact">CONTACT US</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+ 
   </div>
 </div>
 
@@ -59,9 +109,44 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Welcome to AG Services</span></h1>
-    <p>Metallurgical Desigs and Development.</p>
-    <img src="./agm_bar.jpg" alt="boy" class="w3-image" width="100" height="100">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Welcome to AG Metallurgical Services</span></h1>
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+       <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="services/6.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="services/3.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="services/1.jpg" alt="New york" style="width:100%;">
+      </div>
+       <div class="item">
+        <img src="services/7.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
   </header>
 
   <!-- About Section -->
@@ -73,15 +158,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Metallurgy</p>
+    <p class="w3-wide">NDT Testing</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
-    <p class="w3-wide">Web Design</p>
+    <p class="w3-wide">Chemical Analysis</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+     <p class="w3-wide">Mechanical Testing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+     <p class="w3-wide">Weld Testing</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-    <p class="w3-wide">Photoshop</p>
+   <!--  <p class="w3-wide">Photoshop</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:80%"></div>
     </div><br>
@@ -102,13 +195,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">150+</span><br>
         Meetings
-      </div>
+      </div> -->
     </div>
 
    
     
     <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+   <!--  <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
@@ -125,9 +218,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
           </li>
         </ul>
-      </div>
+      </div> -->
 
-      <div class="w3-half">
+     <!--  <div class="w3-half">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
           <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
           <li class="w3-padding-16">Web Design</li>
@@ -143,27 +236,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           </li>
         </ul>
       </div>
-    <!-- End Grid/Pricing tables -->
-    </div>
+    
+    </div> -->
     
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+   <!--  <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
     <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
     <p>John Doe saved us from a web disaster.</p><br>
     
     <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than John Doe.</p>
+    <p>No one is better than John Doe.</p> -->
   <!-- End About Section -->
   </div>
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
+   <!--  <h2 class="w3-text-light-grey">My Photos</h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <!-- Grid for photos -->
+   
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <img src="/w3images/wedding.jpg" style="width:100%">
@@ -176,54 +269,94 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <img src="/w3images/chef.jpg" style="width:100%">
         <img src="/w3images/wedding.jpg" style="width:100%">
         <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+      </div> -->
+    
     </div>
   <!-- End Portfolio Section -->
   </div>
 <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="services">
     <h2 class="w3-text-light-grey">My Services</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+     <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+       <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+       <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="./agm_bar.jpg" style="width:100%">
-        
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="services/6.jpg" alt="Ultra Sonic Testing" style="width:100%;">
       </div>
 
-      <div class="w3-half">
-        <img src="./agm_bar.jpg" style="width:100%">
-        
+      <div class="item">
+        <img src="services/3.jpg" alt="PMI Testing" style="width:100%;">
       </div>
-    <!-- End photo grid -->
+    
+      <div class="item">
+        <img src="services/1.jpg" alt="Dye penetrant Testing" style="width:100%;">
+      </div>
+       <div class="item">
+        <img src="services/7.jpg" alt="Visual Inspection " style="width:100%;">
+      </div>
+       <div class="item">
+        <img src="services/2.jpg" alt="Magnetic Practicle Testing" style="width:100%;">
+      </div>
+       <div class="item">
+        <img src="services/4.jpg" alt="Thickness Gauging" style="width:100%;">
+      </div>
+       <div class="item">
+        <img src="services/5.jpg" alt="Magnetic Practicle testing" style="width:100%;">
+      </div>
     </div>
-  <!-- End Portfolio Section -->
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+   
+  
   </div>
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
+    <div class="row">
+    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Hyderabad, India</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 91-89779 77054</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: agmservices@gmail.com</p>
-    </div><br>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: agmetalservices@gmail.com</p>
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+      <div id="map-container-google-12" class="z-depth-1-half map-container-5" style="height: 500px;width:auto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d1955952.994406772!2d78.37021730686718!3d16.76569225595933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d16.025324899999998!2d80.6842333!4m3!3m2!1d17.5121!2d78.3023!5e0!3m2!1sen!2sus!4v1629091294905!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+  </div>
    
   <!-- End Contact Section -->
   </div>
   
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+   <a href="https://facebook.com"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+   <a href="https://instagram.com"> <i class="fa fa-instagram w3-hover-opacity"></i>  </a> 
+   <a href="https://twitter.com"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+   <a href="https://linkedin.com"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
     <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">AGM Services</a></p>
+    <p class="w3-medium"> <span> AGM Services © 2021</span>.  All Rights Reserved.</p>
   <!-- End footer -->
   </footer>
 
@@ -231,6 +364,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- end here -->
 <!-- END PAGE CONTENT -->
 </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+$("#myLinks").click(function(){
+   $("#myLinks").css("display", "none");
+})
+</script>
 
 </body>
 </html>
