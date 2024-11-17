@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+   <title>Welcome to AGM Services</title>
+   <link rel = "icon" href = "./favicon.png"  type = "image/x-icon">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+    .w3-black, .w3-hover-black:hover {
+        color: #fff!important;
+        background-color: #31708f!important;
+    }
+    .w3-padding-64{
+      padding-left: 10px !important;
+
+    }
+    .topnav{
+      background-color: #36708f !important;
+    }
+    .topnav a.icon {
+    background: #9cadbb !important;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+.topnav a.active {
+   background: #9cadbb !important;
+  }
+    .w3-sidebar {
+    width: 120px;
+    background: #36708f !important;
+   
+    border: 4px solid white !important;
+    border-bottom: 2px !important;
+}
+    .socialmedia{
+      color: #fbfbfb !important;
+    text-decoration: none;
+    }
+    .sqs-block-content{
+      text-indent: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size:15px;
+
+    }
+    .w3-dark-blue{
+     
+      color: #fff!important;
+      background-color: #286090!important;
+    }
+    
+      .sqs-row{
+      display:table;
+      }
+      .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+      }
+      .topnav #myLinks {
+      display: none;
+      }
+      .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+      }
+      .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      }
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+      .active {
+      background-color: #222;
+      color: white;
+      }
+      body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+      .w3-row-padding img {margin-bottom: 12px}
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {width: 120px;background: #222;}
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      #main {margin-left: 120px}
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+   </style>
+   <body class="w3-black">
+      <!-- Icon Bar (Sidebar - hidden on small screens) -->
+      <nav class="w3-sidebar  w3-small w3-hide-small w3-center">
+         <!-- Avatar image in top left corner -->
+         <img src="./logo.png" style="width:100%">
+         <a href="#main" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+         </a>
+        
+         <a href="#services" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xxlarge"></i>
+            <p>SERVICES</p>
+         </a>
+          <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>ABOUT</p>
+         </a>
+         <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+         </a>
+      </nav>
+      <!-- Navbar on small screens (Hidden on medium and large screens) -->
+      <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+         <div class="mobile-container">
+            <div class="topnav">
+               <a href="#main" class="active"> <img src="./logo.png" style="width:8%"> <span>AGM Services</span></a> 
+
+               <div id="myLinks">                  
+                  <a href="#services">Services</a>
+                  <a href="#about">ABOUT</a>
+                  <a href="#contact">CONTACT US</a>
+               </div>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- Page Content -->
+     <div class="w3-padding-large" >
+        <h1 class="w3-center" style="font-size:40px;"><span class="w3-hide-small">Welcome to AG Metallurgical Services</span></h1>
+      </div>
+      <div class="w3-padding-large" id="main">
+         <!-- Header/Home -->
+
+         <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+           
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:100px;">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+                  <li data-target="#myCarousel" data-slide-to="5"></li>                  
+               </ol>
+               <div class="carousel-inner">
+                  <div class="item active">
+                     <img src="6.jpg" alt="Ultra Sonic Testing" style="width:100%;">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>
+                        <h5>Ultrasonic Flaw Inspection (UT) is a non destructive inspection method which utilizes high frequency sound waves to measure physical properties and to identify material flaws</h5>
+                        <a href="#ultra_sonic_testing_div">Learn More</a></p>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <img src="3.jpg" alt="PMI Testing" style="width:100%;">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p>
+                        <h5>This test used for the measurement of thickness layers for single and multiple coatings on just about any substrate. PMI can also be used for elemental analysis and chemical analysis in the investigation of metals, glass, ceramics and building materials</h5>
+                        <a href="#pmi_testing_div">learn More</a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <img src="1.jpg" alt="Dye penetrant Testing" style="width:100%;">
+                     <div class="carousel-caption d-none d-md-block">
+                        <p> 
+                        <h5>Dye penetrant inspection (DPI) or penetrant testing (PT) is a widely applied inspection method used to locate surface-breaking defects in all non-porous materials (metals, plastics, or ceramics). DPI is used to detect casting, forging and welding surface defects such as hairline cracks, surface porosity, leaks in new products, and fatigue cracks on in-service components.</h5>
+                        <a href="#dye_penetrant_div">Learn More</a></p>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <img src="7.jpg" alt="Visual Inspection " style="width:100%;">
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Visual Inspection is an important step in any evaluation and should be performed before any other NDE method. Visual inspection provides information related to workmanship, structural serviceability, and material deterioration of a given specimen</h5>
+                        <a href="#visual_inspection_div">Learn More</a>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <img src="2.jpg" alt="Magnetic Practicle Testing" style="width:100%;">
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Magnetic particle Inspection (MPI) is a non-destructive testing process for detecting surface and slightly subsurface discontinuities in ferromagnetic materials</h5>
+                        <a href="#magnetic_practicle_div">learn More</a>
+                     </div>
+                  </div>
+                  
+                  <div class="item">
+                     <img src="5.jpg" alt="Metallographic examination" style="width:100%;">
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Metallographic examination is typically performed on polished cross sections, which may be etched to bring out the structure of the material by selectively corroding grain boundaries</h5>
+                        <a href="#metallographic_div"></a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Left and right controls -->
+               <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="right carousel-control" href="#myCarousel" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </header>
+         <!-- About Section -->
+       
+          <div class="w3-content" id="services">
+            <h2 class="w3-text-light-grey">Our Services</h2>
+            <!-- Portfolio Section -->
+          <div class=" w3-content" id="ultra_sonic_testing_div">
+              <div class="row" >
+            <h3 style="white-space:pre-wrap;" class="w3-text-light-blue">Ultrasonic  Inspection Testing</h3>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" >
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;">AGM has numerous inspectors for both shear wave and angle-beam inspections. We offer in-house and field inspections with a rapid turnaround.  </p>
+                     <p class="" style="white-space:pre-wrap;">Ultrasonic Flaw Inspection (UT) is a non destructive inspection method which utilizes high frequency sound waves to measure physical properties and to identify material flaws. Applications for UT inspection include both surface and subsurface flaw detection in solid materials and welds. Defects, such as laminations, cracks, incomplete fusion, inclusions, and voids can typically be detected. Generally, sound waves of high frequency are reflected from flaws and generate clear echo patterns which are then interpreted by qualified ASNT TC-1A personnel.</p>
+                     <p class="" style="white-space:pre-wrap;">To perform ultrasonic testing on a specimen, a transducer is passed over the object being inspected, often utilizing a couplant gel or liquid. The transducer is connected to a portable electronic base unit which displays a real time data feed. Reflected ultrasounds come from an interface, such as the back wall of the object or from an imperfection within the object, such as a crack. The base unit displays these results in the form of a signal with an amplitude representing the intensity of the reflection and the distance, representing the arrival time of the reflection. </p>
+                     <p class="" style="white-space:pre-wrap;">Located in Hyderabad, AGM Services has a complete metallurgical laboratory staffed with Level II &amp; III experts to supervise all NDT testing projects. AGM Services provides <strong>rapid inspection results</strong>&nbsp;at an <strong>affordable price</strong>. As an ISO 9001:2015 company accredited service provider,&nbsp;<strong>quality is our focus</strong>.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col sqs-col-6 span-6" id="yui_3_17_2_1_1633936843116_143">
+               <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5" id="block-yui_3_17_2_1_1624030125347_4863">
+                  <div class="sqs-block-content" id="yui_3_17_2_1_1633936843116_142">
+                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12
+                        image-block-outer-wrapper
+                        layout-caption-below
+                        design-layout-inline
+                        combination-animation-none
+                        individual-animation-none
+                        individual-text-animation-none
+                        " data-test="image-block-inline-outer-wrapper" id="yui_3_17_2_1_1633936843116_141">
+                        <figure class="
+                           sqs-block-image-figure intrinsic" style="max-width:2500px; overflow: hidden;" id="yui_3_17_2_1_1633936843116_140">
+                           <div class="image-block-wrapper" data-animation-role="image" id="yui_3_17_2_1_1633936843116_139">
+                              <div class="sqs-image-shape-container-element
+                                 has-aspect-ratio
+                                 " style="
+                                 position: relative;
+                                 padding-bottom:66.68000030517578%;overflow: hidden;" id="yui_3_17_2_1_1633936843116_138">
+                                 <noscript><img src="6.jpg" alt="" /></noscript>
+                                 <img class="thumb-image loaded" data-src="6.jpg" data-image="6.jpg" data-image-dimensions="2500x1667" data-image-focal-point="0.5,0.5" alt="" data-load="false" data-image-id="60ccbd6bcde909003d0cf2ad" data-type="image" data-image-resolution="500w" src="6.jpg?format=500w" style="left: -0.0407018%; top: 0%; width: 100.081%; height: 100%; position: absolute;">
+                              </div>
+                           </div>
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-bc229e81d9a8a63f07f7">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;"><strong>CAPABILITIES</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Highly portable</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Non-destructive technique</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">High penetrating power, which allows the detection of flaws deep in the part</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">High sensitivity</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Only one surface needs to be accessible</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Determines the thickness of parts with parallel surfaces</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Capability of estimating the size, orientation, shape and nature of defects.</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Non hazardous to operations equipment or personnel</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SPECIFICATIONS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">AWS D1.1</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E164</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E213</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E587</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SAMPLE REQUIREMENTS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Sample Size – 0.100” – 12.00” thick</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end of ultra sonic testing  -->
+      <div class="w3-padding-64 w3-content" id="visual_inspection_div">
+         <div class="row sqs-row">
+            <h3 class="w3-text-light-blue">visual inspection</h3>
+            <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12">
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-1f1defc00afd7bd23677">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;">Located in Hyderabad, AGM has a complete metallurgical laboratory staffed with masters level materials engineers and Level III inspectors to supervise all NDT testing projects. AGM Services provides <strong>rapid inspection results</strong>&nbsp;at an <strong>affordable price</strong>. As an ISO 9001:2015 company accredited service provider,&nbsp;<strong>quality is our focus</strong>.</p>
+                     <p class="" style="white-space:pre-wrap;">Visual Inspection is an important step in any evaluation and should be performed before any other NDE method. Visual inspection provides information related to workmanship, structural serviceability, and material deterioration of a given specimen.</p>
+                     <p class="" style="white-space:pre-wrap;">It is particularly important that the inspector is able to differentiate between a normal condition and the various signs of distress which may be encountered. A thorough visual inspection can help characterize weld quality and identify cracks, pop-outs, spalling, disintegration, color change, weathering, staining, surface blemishes and lack of uniformity. Information gathered from VI may help prescribe additional NDE tests or provide insight into the root cause of a defect.</p>
+                     <ul data-rte-list="default"></ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12">
+               <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-2b253ffee4374d01bd78">
+                  <div class="sqs-block-content">&nbsp;</div>
+               </div>
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-d32be764adfd5c1d9b3d">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;"><strong>CAPABILITIES</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Simple, rapid, and low cost test</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Can be performed while the specimen is being used or processed</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Check for weld appearance, size, length, and dimensional accuracy</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Detection of surface flaws, corrosion, and contamination</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Non hazardous to operations equipment and personnel</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SPECIFICATIONS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">AWS D1.1</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM A802</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM A997</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SAMPLE REQUIREMENTS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Access shall be sufficient to place the eye within 24 inches of the surface to be inspected</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  end of div -->
+      <div class="w3-padding-64 w3-content" id="pmi_testing_div">
+         <div class="row sqs-row">
+            <h3 style="white-space:pre-wrap;" class="w3-text-light-blue">PMI Testing</h3>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-c262ff3d7b44c0ba501e">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;">At your job site, or in the laboratory AGM Services provides portable PMI testing for rapid alloy identification. PMI analysis can ensure product chemistry specifications are met or help you sort various alloys. PMI technology provides accurate, nondestructive elemental analysis in a wide range of industries including: metals, mining, petroleum, chemicals, cement, and food.</p>
+                     <p class="" style="white-space:pre-wrap;">In addition to our portable units, our bench-top unit utilizes X-Ray Fluorescence (XRF Testing) for the measurement of thickness layers for single and multiple coatings on just about any substrate. XRF can also be used for elemental analysis and chemical analysis in the investigation of metals, glass, ceramics and building materials.</p>
+                     <p class="" style="white-space:pre-wrap;">Located in Hyderabad, AGM Services has a complete metallurgical laboratory staffed with graduate level materials engineers and chemists to supervise all chemical analysis projects. Our full-service mechanical lab offers <strong>rapid test results</strong>&nbsp;at an <strong>affordable price</strong>. As an ISO 9001:2015 company accredited lab,&nbsp;<strong>quality is our focus</strong>.</p>
+                  </div>
+               </div>
+               <div class="sqs-block button-block sqs-block-button" data-block-type="53" id="block-yui_3_17_2_1_1582240874341_5904">
+                  <div class="sqs-block-content" id="yui_3_17_2_1_1633939683059_166">
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-f3bc4173a2e74e2f6583">
+                  <div class="sqs-block-content">&nbsp;</div>
+               </div>
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-56e2ddda468ad8d12329">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;"><strong>CAPABILITIES</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Rapid alloy identification</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Portable unit for field inspection</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Determine thickness of single and multiple coating layers</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Elemental analysis</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Mineral analysis</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SPECIFICATIONS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM B568 - Coating Thickness by X-Ray Spectrometry</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SAMPLE REQUIREMENTS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Requires approximately 1 mil thickness or 1 gram of material</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="w3-padding-64 w3-content" id="magnetic_practicle_div">
+         <div class="row sqs-row" id="yui_3_17_2_1_1633939897212_144">
+            <h3 style="white-space:pre-wrap;" class="w3-text-light-blue">Magnetic particle (MT)</h3>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" id="yui_3_17_2_1_1633939897212_143">
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-ee7b78e32d0313e0cf54">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;">The AGM Services NDT team provides field and laboratory based magnetic particle inspection (MT).  Located in Hyderabad, AGM Services has NDT field crews staffed with Level II &amp; III experts to supervise all NDT projects and get your project scheduled quickly. </p>
+                  </div>
+               </div>
+               <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5" id="block-yui_3_17_2_1_1556811864786_5628">
+                  <div class="sqs-block-content" id="yui_3_17_2_1_1633939897212_142">
+                     <div class="
+                        image-block-outer-wrapper
+                        layout-caption-below
+                        design-layout-inline
+                        combination-animation-none
+                        individual-animation-none
+                        individual-text-animation-none
+                        " data-test="image-block-inline-outer-wrapper" id="yui_3_17_2_1_1633939897212_141">
+                        <figure class="
+                           sqs-block-image-figure
+                           intrinsic
+                           " style="max-width:600px; 
+                           overflow: hidden;
+                           " id="yui_3_17_2_1_1633939897212_140">
+                           <div class="image-block-wrapper" data-animation-role="image" id="yui_3_17_2_1_1633939897212_139">
+                              <div class="sqs-image-shape-container-element
+                                 has-aspect-ratio
+                                 " style="
+                                 position: relative;
+                                 padding-bottom:66.66667175292969%;
+                                 overflow: hidden;
+                                 " id="yui_3_17_2_1_1633939897212_138">
+                                 <noscript><img src="2.jpg" alt="AGM Services provides both wet and dry MT inspection." /></noscript>
+                                 <img class="thumb-image loaded" data-src="2.jpg" data-image="2.jpg" data-image-dimensions="600x400" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="5ccb12760073680001ad2835" data-type="image" alt="AGM Services provides both wet and dry MT inspection." data-image-resolution="500w" src="2.jpg?format=500w" style="left: 0%; top: -0.059312%; width: 100%; height: 100.119%; position: absolute;">
+                              </div>
+                           </div>
+                           <figcaption class="image-caption-wrapper">
+                              <div class="image-caption">
+                                 <p class="">AGM Services provides both wet and dry MT inspection.</p>
+                              </div>
+                           </figcaption>
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1556811864786_5906">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;">Magnetic particle Inspection (MPI) is a non-destructive testing process for detecting surface and slightly subsurface discontinuities in ferromagnetic materials. The process puts a magnetic field into the part, which creates “poles” of opposite sign on either side of discontinuities. The polarity creates an attractive force for iron particles, which are used to locate indications. The indication can then be evaluated by a certified technician to determine what it is, what may have caused it, and what action should be taken, if any.</p>
+                     <p class="" style="white-space:pre-wrap;">MPI can be conducted in the laboratory or in the field using portable equipment. Our portable units are particularly useful for objects too large for in house methods, such as bridges, tanks, large weldments, and pressure vessels. Following inspection, the sample is demagnetized and cleaned.</p>
+                     <p class="" style="white-space:pre-wrap;">AGM Services provides <strong>rapid inspection results</strong>&nbsp;at an <strong>affordable price</strong>. As an ISO 9001:2015 company accredited service provider,&nbsp;<strong>quality is our focus</strong>.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-92169a1d21c143a7178d">
+                  <div class="sqs-block-content">&nbsp;</div>
+               </div>
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-7ce3b3b3550cd7f9d1a9">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;"><strong>APPLICATIONS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Non-destructive technique</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Detects cracks, laps, seams, inclusions and other discontinuities on or near the surface</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">May be applied to raw materials, billets, finished materials, welds, and in-service parts</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Non hazardous to operations equipment and personnel</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Highly portable</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>CAPABILITIES</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Inspection of 100% of pipe/rod volume</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Rapid identification of corrosion damage in buried or covered structures</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Ability to detect corrosion and other defects</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Monitoring for corrosion over time</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Collect corrosion data at difficult to access areas</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Portable equipment</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SPECIFICATIONS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">AWS D1.1</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM A903</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM A966</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E1444</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SAMPLE REQUIREMENTS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Magnetic particle examination is only applicable to ferromagnetic materials</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Macro inspection technique</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="w3-padding-64 w3-content" id="dye_penetrant_div">
+         <div class="row sqs-row">
+            <h3 style="white-space:pre-wrap;" class="w3-text-light-blue">Dye Penetrant</h3>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-ecf6123944e7cac7d206">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;">The AGM Services NDT team provides field and laboratory dye penetrant (PT) inspection of welds, pipe, and manufactured components. Located in Hyderabad, AGM Services has NDT field crews staffed with Level II &amp; III experts to supervise all NDT projects and flexibility to get your project scheduled quickly. </p>
+                     <p class="" style="white-space:pre-wrap;">Dye penetrant inspection (DPI) or penetrant testing (PT) is a widely applied inspection method used to locate surface-breaking defects in all non-porous materials (metals, plastics, or ceramics). DPI is used to detect casting, forging and welding surface defects such as hairline cracks, surface porosity, leaks in new products, and fatigue cracks on in-service components.</p>
+                     <p class="" style="white-space:pre-wrap;">DPI is based upon capillary action, where low surface tension fluid penetrates into clean and dry surface-breaking discontinuities. Penetrant is applied to the test component by dipping, spraying, or brushing. After adequate penetration time has been allowed, the excess penetrant is removed and a developer is applied. The developer helps to draw penetrant out of the flaw so the indication becomes Services visible to the qualified ASNT TC-1A inspector. Inspection is performed under ultraviolet or white light, depending on the type of dye used -fluorescent or nonfluorescent (visible).</p>
+                     <p class="" style="white-space:pre-wrap;">AGM Services provides <strong>rapid inspection results</strong>&nbsp;at an <strong>affordable price</strong>. As an ISO 9001:2015 company accredited service provider,&nbsp;<strong>quality is our focus</strong>.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-b50876eb30d5ed43705a">
+                  <div class="sqs-block-content">&nbsp;</div>
+               </div>
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-55e614d792d8b82ce7d5">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;"><strong>CAPABILITIES</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Highly portable</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Non destructive technique</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Fast inspection process</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Can be used on welds and base materials</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Detects casting, forging, and welding surface defects</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Non hazardous to operations instrumentation or personnel</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SPECIFICATIONS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">AWS D1.1</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E1417</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SAMPLE REQUIREMENTS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Ferromagnetic and non-ferromagnetic materials up to 20 feet or greater</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Non-porous materials</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="w3-padding-64 w3-content" id="metallographic_div">
+         <div class="row sqs-row" id="yui_3_17_2_1_1633940535931_144">
+            <h3 class="w3-text-light-blue" style="white-space:pre-wrap;">Metallographic Exam</h3>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-56ab9628f8e76e6baf0e">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;">A metallographic exam utilizes inverted optical light for inspection of a material microstructure, grain sizing, and can provide clues to the origin of a metal failure. Our team of experienced metallurgists work with modern camera systems to capture material microstructures, flaws, and abnormalities, which may be critical to preventing future failures.</p>
+                     <p class="" style="white-space:pre-wrap;">Metallographic examination is typically performed on polished cross sections, which may be etched to bring out the structure of the material by selectively corroding grain boundaries. Metallographic exam is often a critical tool for characterizing the extent of cracks and pits. Additionally, this inspection is used to characterize post processing changes due to casting, forging, machining, welding, heat treating and coating.</p>
+                     <p class="" style="white-space:pre-wrap;">Metallographic examination is performed by using state of the art optical microscope equipped with a PAXcam™ III digital camera and image analysis software. Scanning electron microscope can be employed when higher resolution and micro-chemical analysis are required.</p>
+                     <p class="" style="white-space:pre-wrap;"><strong>SPECIFICATIONS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E3 - Preparation of Metallographic Specimens</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E112 - Grain Size</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E45 -  Inclusion Content of Steel</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E1077 - Depth of Decarburization of Steel</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E1268 - Degree of Banding or Orientation of Microstructures</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM A247 - Microstructure of Graphite in Iron Castings</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E340 - Macroetching Metals and Alloys</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">ASTM E407 - Microetching Metals and Alloys</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;">&nbsp;</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" id="yui_3_17_2_1_1633940535931_143">
+               <div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-03523c1908a9eba428b5">
+                  <div class="sqs-block-content">&nbsp;</div>
+               </div>
+               <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5" id="block-yui_3_17_2_1_1592597420225_5371">
+                  <div class="sqs-block-content" id="yui_3_17_2_1_1633940535931_142">
+                     <div class="
+                        image-block-outer-wrapper
+                        layout-caption-below
+                        design-layout-inline
+                        combination-animation-none
+                        individual-animation-none
+                        individual-text-animation-none
+                        " data-test="image-block-inline-outer-wrapper" id="yui_3_17_2_1_1633940535931_141">
+                        <figure class="
+                           sqs-block-image-figure
+                           intrinsic
+                           " style="max-width:2500px; 
+                           overflow: hidden;
+                           " id="yui_3_17_2_1_1633940535931_140">
+                           <div class="image-block-wrapper" data-animation-role="image" id="yui_3_17_2_1_1633940535931_139">
+                              <div class="sqs-image-shape-container-element
+                                 has-aspect-ratio
+                                 " style="
+                                 position: relative;
+                                 padding-bottom:66.63999938964844%;
+                                 overflow: hidden;
+                                 " id="yui_3_17_2_1_1633940535931_138">
+                                 <noscript><img src="5.jpg" alt="met09.jpg" /></noscript>
+                                 <img class="thumb-image loaded" data-src="5.jpg" data-image="5.jpg" data-image-dimensions="2500x1666" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="5eed1cc19ef6971aae3812de" data-type="image" alt="met09.jpg" data-image-resolution="500w" src="5.jpg?format=500w" style="left: 0%; top: -0.0392883%; width: 100%; height: 100.079%; position: absolute;">
+                              </div>
+                           </div>
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+               <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-490fdcbbd555eae72cd2">
+                  <div class="sqs-block-content">
+                     <p class="" style="white-space:pre-wrap;"><strong>CAPABILITIES</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Grain size analysis</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Particle size/distribution</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Coating thickness and case depth</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Inclusion rating</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Ferrite/pearlite percentage</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Porosity</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Grain flow pattern</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Phase area fraction</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Flake size classification</p>
+                        </li>
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Nodularity</p>
+                        </li>
+                     </ul>
+                     <p class="" style="white-space:pre-wrap;"><strong>SAMPLE REQUIREMENTS</strong></p>
+                     <ul data-rte-list="default">
+                        <li>
+                           <p class="" style="white-space:pre-wrap;">Up to 10″ diameter cross section; typically &lt;1.25″ section</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section -->
+        <div class="w3-padding-64 w3-content" id="about">
+            <h2 class="w3-text-light-grey">About AGM Services</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p> Our non-destructive testing (NDT) experts are backed up by years of experience combined with use of cutting-edge technology. The AGM Services NDT team can assist you with the detection of defects, corrosion analysis, or verification of existing product. We serve a variety of industry sectors including aerospace, construction, power generation, oil and gas, automotive, rail, fabrication and mining.
+            </p>
+           
+         </div>
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-white" id="contact">
+         <h2 class="w3-text-white">Contact Me</h2>
+         <hr style="width:200px" class="w3-opacity">
+         <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Hyderabad, India</p>
+               <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Phone:<a href="tel:+918977977054" style="color:white">  +918977977054</a>&nbsp; / &nbsp;<a href="tel:+919550367333" style="color:white">  +919550367333</a></p>
+               <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:agmservicesss@gmail.com" style="color:white">agmservicesss@gmail.com</a></p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+               <div id="map-container-google-12" class="z-depth-1-half map-container-5" style="height: 500px;">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3804.905750155407!2d78.302294!3d17.512012!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd618aecb9f911a02!2sAG%20Metallurgical%20Services!5e0!3m2!1sen!2sin!4v1639223827417!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1591756.1631451827!2d78.37018040852175!3d16.765986009068264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d17.5121111!2d78.3023056!5e1!3m2!1sen!2sus!4v1629095847073!5m2!1sen!2sus" width="auto" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+               </div>
+            </div>
+         </div>
+         <!-- End Contact Section -->
+      </div>
+       <!-- Footer -->
+       <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1625765097140" id="footerBlocks"><div class="row sqs-row" id="yui_3_17_2_1_1639224305379_359"><div class="col sqs-col-12 span-12" id="yui_3_17_2_1_1639224305379_358"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1547499630230_129905"><div class="sqs-block-content" id="yui_3_17_2_1_1639224305379_357"><h2 style="white-space:pre-wrap;" id="yui_3_17_2_1_1639224305379_356">OUR TESTING SERVICES</h2>
+       </div>
+
+     </div></div></div>
+     <div class="row sqs-row">
+      <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+            <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1547499630230_71220"><div class="sqs-block-content">
+               <h5 class="w3-text-light-blue"><strong>NON-DESTRUCTIVE TESTING </strong></h5>
+         <ul>
+          <li>Dye Penetrant (PT)</li><li>Eddy Current Testing (ET)</li><li>Ground Penetrating Radar (GPR</li><li>Guided Wave Ultrasound</li><li>Magnetic Particle (MT)</li><li>Portable Hardness</li><li>Strain Gauge Testing</li><li>Ultrasonic Flaw Inspection (UT)</li><li>Visual Inspection (VT)</li><li>X-ray (RT) </li><li>Helium Leak Testing</li>
+         </ul>
+
+              
+             
+         
+
+        
+       </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+      <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1547499630230_80787"><div class="sqs-block-content">
+        <h5 class="w3-text-light-blue"><strong>MECHANICAL TESTING</strong></h5>
+
+              <ul>
+                <li>Bend Testing</li><li>Drop Weight Tear Test</li><li>Flexural Testing</li><li>Impact Resistance</li><li>Hardness Testing</li><li>Micro Hardness</li><li>Shear Testing</li><li>Tensile Testing</li><li>Abrasion Testing</li><li>Adhesion Testing</li><li>Torsion Testing</li><li>Elevated Temperature Testing</li>
+                
+              </ul>  
+    
+    
+
+      </div></div></div>
+
+
+      <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1547499630230_118945"><div class="sqs-block-content">
+        <h5 class="w3-text-light-blue"><strong>CHEMICAL ANALYSIS</strong></h5>
+
+              <ul>
+                <li>PMI Testing</li>
+                <li>Energy Dispersive X-ray (EDS)</li>
+                <li>FTIR Analysis</li>
+                 <li>Optical Emission (OES)</li>
+                 <li>Wavelength Dispersive X-ray (WDS)</li>
+                 <li>X-ray Diffraction (XRD)</li>
+                 <li>X-ray Fluorescence (XRF)</li>
+                 <li>E-Backscatter Diffraction (EBSD)</li>
+              </ul>  
+         
+
+       </div>
+     </div>
+      </div>
+
+      </div>
+       <div class="row sqs-row">
+         <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1547499630230_118945"><div class="sqs-block-content">
+            <h5 class="w3-text-light-blue"><strong>WELD TESTING</strong></h5>
+
+              <ul>
+                <li>Weld Procedure Qualification</li>
+                <li>Welder Qualification (WPQ)</li>
+                <li>In-field Weld Inspection</li>
+                
+              </ul>  
+
+           </div>
+       </div>
+        </div>
+
+ <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1547499630230_118945"><div class="sqs-block-content">
+    <h5 class="w3-text-light-blue"><strong>METALLURGICAL </strong></h5>
+       <ul>
+          <li>Macroetch Exam</li><li>Metallographic Exam</li><li>Sample Preparation</li><li>Stereo Microscopy</li>
+              </ul>  
+           </div>
+       </div>
+        </div>
+
+
+         <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_1_1547499630230_118945"><div class="sqs-block-content">
+             <h5 class="w3-text-light-blue"><strong>PIPELINE MATERIAL VERIFICATION </strong></h5>
+      <ul>
+          <li>In-field Inspection</li><li>PHMSA Mega Rule Testing</li>
+         </ul>
+           </div>
+       </div>
+        </div>
+
+       </div>
+
+      </div>
+      <footer class="w3-content w3-padding-64 w3-text-white w3-xlarge">
+         <a href="https://facebook.com" class="socialmedia"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+         <a href="https://instagram.com" class="socialmedia"> <i class="fa fa-instagram w3-hover-opacity"></i>  </a> 
+         <a href="https://twitter.com" class="socialmedia"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+         <a href="https://linkedin.com" class="socialmedia"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+         <p class="w3-medium w3-text-white">Powered by AGM Services</p>
+         <p class="w3-medium w3-text-white"> <span> AGM Services © 2021</span>.  All Rights Reserved.</p>
+         <!-- End footer -->
+      </footer>
+
+
+          </div>
+
+      </div>
+
+      </div>
+     
+      
+     
+      <!-- end here -->
+      <!-- END PAGE CONTENT -->
+      </div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myLinks");
+           if (x.style.display === "block") {
+             x.style.display = "none";
+           } else {
+             x.style.display = "block";
+           }
+         }
+         $("#myLinks").click(function(){
+            $("#myLinks").css("display", "none");
+         })
+      </script>
+   </body>
+</html>
